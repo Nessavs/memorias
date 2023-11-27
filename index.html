@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simulação de Memória</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+</head>
+<body>
+  <div class="container mt-5">
+    <h1>Simulação de Memória</h1>
+    <div>
+      <p>Memória Atual: <span id="memSize">0</span></p>
+      <button onclick="alterarMemoria('aumentar')" class="btn btn-success">Aumentar Memória</button>
+      <button onclick="alterarMemoria('diminuir')" class="btn btn-danger">Diminuir Memória</button>
+    </div>
+    <div>
+      <label for="enderecoBinario">Endereço Binário:</label>
+      <input type="text" id="enderecoBinario" class="form-control" placeholder="Insira o endereço binário">
+      <button onclick="operacaoMemoria('leitura')" class="btn btn-primary mt-2">Realizar Leitura</button>
+      <button onclick="operacaoMemoria('escrita')" class="btn btn-warning mt-2">Realizar Escrita</button>
+    </div>
+    <div id="resultado" class="mt-3"></div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <script src="/script.js"></script>
+</body>
+</html>
